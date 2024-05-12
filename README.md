@@ -8,3 +8,6 @@
            socket for computer info
            multiprocessing for screenshot
            PIL for image grab
+run the code and type to check the keylogger
+
+after stop the python program to see all files  in destination folder 
