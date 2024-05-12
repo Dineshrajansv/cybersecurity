@@ -1,5 +1,5 @@
-Download packages
-pip install
+#Download packages
+#pip install
            pywin32 for capture data in clipboard
            pynput for capturing key stokes
            scipy for capturing microphone
