@@ -4,6 +4,10 @@ cp -computer information
 
 microP - microphone information
 
+cpy_clipboard -to copy data from clipboard
+
+screen - to take screenshot
+
 
 #pip install
 
